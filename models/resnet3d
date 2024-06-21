@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "fe1381a2",
+   "id": "99c52140",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2024-06-21T17:57:30.500342Z",
-     "iopub.status.busy": "2024-06-21T17:57:30.499138Z",
-     "iopub.status.idle": "2024-06-21T17:57:44.542013Z",
-     "shell.execute_reply": "2024-06-21T17:57:44.540783Z"
+     "iopub.execute_input": "2024-06-21T18:01:56.041827Z",
+     "iopub.status.busy": "2024-06-21T18:01:56.041442Z",
+     "iopub.status.idle": "2024-06-21T18:02:09.521026Z",
+     "shell.execute_reply": "2024-06-21T18:02:09.519720Z"
     },
     "papermill": {
-     "duration": 14.049877,
-     "end_time": "2024-06-21T17:57:44.544548",
+     "duration": 13.486872,
+     "end_time": "2024-06-21T18:02:09.523928",
      "exception": false,
-     "start_time": "2024-06-21T17:57:30.494671",
+     "start_time": "2024-06-21T18:01:56.037056",
      "status": "completed"
     },
     "tags": []
@@ -42,19 +42,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "06115aa2",
+   "id": "e9d4912b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T17:57:44.553409Z",
-     "iopub.status.busy": "2024-06-21T17:57:44.552241Z",
-     "iopub.status.idle": "2024-06-21T17:57:50.418121Z",
-     "shell.execute_reply": "2024-06-21T17:57:50.417138Z"
+     "iopub.execute_input": "2024-06-21T18:02:09.532698Z",
+     "iopub.status.busy": "2024-06-21T18:02:09.531597Z",
+     "iopub.status.idle": "2024-06-21T18:02:14.853395Z",
+     "shell.execute_reply": "2024-06-21T18:02:14.852353Z"
     },
     "papermill": {
-     "duration": 5.873575,
-     "end_time": "2024-06-21T17:57:50.421223",
+     "duration": 5.328913,
+     "end_time": "2024-06-21T18:02:14.856026",
      "exception": false,
-     "start_time": "2024-06-21T17:57:44.547648",
+     "start_time": "2024-06-21T18:02:09.527113",
      "status": "completed"
     },
     "tags": []
@@ -72,19 +72,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "c1472887",
+   "id": "66fa6a18",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T17:57:50.430291Z",
-     "iopub.status.busy": "2024-06-21T17:57:50.429578Z",
-     "iopub.status.idle": "2024-06-21T17:58:00.932716Z",
-     "shell.execute_reply": "2024-06-21T17:58:00.931388Z"
+     "iopub.execute_input": "2024-06-21T18:02:14.863859Z",
+     "iopub.status.busy": "2024-06-21T18:02:14.863378Z",
+     "iopub.status.idle": "2024-06-21T18:02:24.989190Z",
+     "shell.execute_reply": "2024-06-21T18:02:24.988007Z"
     },
     "papermill": {
-     "duration": 10.51048,
-     "end_time": "2024-06-21T17:58:00.935134",
+     "duration": 10.132913,
+     "end_time": "2024-06-21T18:02:24.991964",
      "exception": false,
-     "start_time": "2024-06-21T17:57:50.424654",
+     "start_time": "2024-06-21T18:02:14.859051",
      "status": "completed"
     },
     "tags": []
@@ -99,7 +99,7 @@
       "/opt/conda/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.\n",
       "  warnings.warn(msg)\n",
       "Downloading: \"https://download.pytorch.org/models/resnet50-0676ba61.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth\n",
-      "100%|██████████| 97.8M/97.8M [00:00<00:00, 130MB/s]\n"
+      "100%|██████████| 97.8M/97.8M [00:00<00:00, 141MB/s]\n"
      ]
     },
     {
@@ -235,19 +235,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "3c392922",
+   "id": "fa20e9b9",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T17:58:00.945528Z",
-     "iopub.status.busy": "2024-06-21T17:58:00.945115Z",
-     "iopub.status.idle": "2024-06-21T17:58:00.953798Z",
-     "shell.execute_reply": "2024-06-21T17:58:00.952625Z"
+     "iopub.execute_input": "2024-06-21T18:02:25.002494Z",
+     "iopub.status.busy": "2024-06-21T18:02:25.001933Z",
+     "iopub.status.idle": "2024-06-21T18:02:25.010788Z",
+     "shell.execute_reply": "2024-06-21T18:02:25.009872Z"
     },
     "papermill": {
-     "duration": 0.01673,
-     "end_time": "2024-06-21T17:58:00.956103",
+     "duration": 0.016688,
+     "end_time": "2024-06-21T18:02:25.013129",
      "exception": false,
-     "start_time": "2024-06-21T17:58:00.939373",
+     "start_time": "2024-06-21T18:02:24.996441",
      "status": "completed"
     },
     "tags": []
@@ -260,7 +260,6 @@
     "import torch.nn as nn\n",
     "import torchvision.models as models\n",
     "from torchvision.models import resnet50\n",
-    "from torchsummary import summary\n",
     "from skimage.transform import resize\n",
     "class ResNet3D(nn.Module):\n",
     "    def __init__(self, pretrained=True):\n",
@@ -375,19 +374,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "3e53db05",
+   "id": "4f86321b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T17:58:00.965716Z",
-     "iopub.status.busy": "2024-06-21T17:58:00.965297Z",
-     "iopub.status.idle": "2024-06-21T17:58:16.426290Z",
-     "shell.execute_reply": "2024-06-21T17:58:16.425026Z"
+     "iopub.execute_input": "2024-06-21T18:02:25.022746Z",
+     "iopub.status.busy": "2024-06-21T18:02:25.022367Z",
+     "iopub.status.idle": "2024-06-21T18:02:40.050569Z",
+     "shell.execute_reply": "2024-06-21T18:02:40.049350Z"
     },
     "papermill": {
-     "duration": 15.469054,
-     "end_time": "2024-06-21T17:58:16.429224",
+     "duration": 15.036239,
+     "end_time": "2024-06-21T18:02:40.053497",
      "exception": false,
-     "start_time": "2024-06-21T17:58:00.960170",
+     "start_time": "2024-06-21T18:02:25.017258",
      "status": "completed"
     },
     "tags": []
@@ -577,14 +576,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 50.2119,
-   "end_time": "2024-06-21T17:58:17.859014",
+   "duration": 48.025545,
+   "end_time": "2024-06-21T18:02:41.380930",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-21T17:57:27.647114",
+   "start_time": "2024-06-21T18:01:53.355385",
    "version": "2.5.0"
   }
  },
