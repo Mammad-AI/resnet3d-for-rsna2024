@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "8a8fe62c",
+   "id": "ce6ebf93",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2024-06-22T16:42:16.443790Z",
-     "iopub.status.busy": "2024-06-22T16:42:16.443278Z",
-     "iopub.status.idle": "2024-06-22T16:42:33.675644Z",
-     "shell.execute_reply": "2024-06-22T16:42:33.674203Z"
+     "iopub.execute_input": "2024-06-22T20:31:02.440708Z",
+     "iopub.status.busy": "2024-06-22T20:31:02.440265Z",
+     "iopub.status.idle": "2024-06-22T20:31:20.142082Z",
+     "shell.execute_reply": "2024-06-22T20:31:20.140807Z"
     },
     "papermill": {
-     "duration": 17.241708,
-     "end_time": "2024-06-22T16:42:33.679055",
+     "duration": 17.710588,
+     "end_time": "2024-06-22T20:31:20.145253",
      "exception": false,
-     "start_time": "2024-06-22T16:42:16.437347",
+     "start_time": "2024-06-22T20:31:02.434665",
      "status": "completed"
     },
     "tags": []
@@ -42,19 +42,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "e9471d2f",
+   "id": "e0e3e13e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-22T16:42:33.689900Z",
-     "iopub.status.busy": "2024-06-22T16:42:33.689465Z",
-     "iopub.status.idle": "2024-06-22T16:42:40.457821Z",
-     "shell.execute_reply": "2024-06-22T16:42:40.456538Z"
+     "iopub.execute_input": "2024-06-22T20:31:20.155904Z",
+     "iopub.status.busy": "2024-06-22T20:31:20.155441Z",
+     "iopub.status.idle": "2024-06-22T20:31:26.618637Z",
+     "shell.execute_reply": "2024-06-22T20:31:26.617408Z"
     },
     "papermill": {
-     "duration": 6.777305,
-     "end_time": "2024-06-22T16:42:40.460912",
+     "duration": 6.472737,
+     "end_time": "2024-06-22T20:31:26.622425",
      "exception": false,
-     "start_time": "2024-06-22T16:42:33.683607",
+     "start_time": "2024-06-22T20:31:20.149688",
      "status": "completed"
     },
     "tags": []
@@ -72,19 +72,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "09fa44f0",
+   "id": "87292cc5",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-22T16:42:40.471914Z",
-     "iopub.status.busy": "2024-06-22T16:42:40.471351Z",
-     "iopub.status.idle": "2024-06-22T16:42:40.478008Z",
-     "shell.execute_reply": "2024-06-22T16:42:40.476565Z"
+     "iopub.execute_input": "2024-06-22T20:31:26.638637Z",
+     "iopub.status.busy": "2024-06-22T20:31:26.637555Z",
+     "iopub.status.idle": "2024-06-22T20:31:26.644988Z",
+     "shell.execute_reply": "2024-06-22T20:31:26.643445Z"
     },
     "papermill": {
-     "duration": 0.015274,
-     "end_time": "2024-06-22T16:42:40.480798",
+     "duration": 0.021108,
+     "end_time": "2024-06-22T20:31:26.649551",
      "exception": false,
-     "start_time": "2024-06-22T16:42:40.465524",
+     "start_time": "2024-06-22T20:31:26.628443",
      "status": "completed"
     },
     "tags": []
@@ -97,19 +97,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "4e4dc1e5",
+   "id": "057b03bd",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-22T16:42:40.491376Z",
-     "iopub.status.busy": "2024-06-22T16:42:40.490981Z",
-     "iopub.status.idle": "2024-06-22T16:42:51.597858Z",
-     "shell.execute_reply": "2024-06-22T16:42:51.595985Z"
+     "iopub.execute_input": "2024-06-22T20:31:26.665489Z",
+     "iopub.status.busy": "2024-06-22T20:31:26.664393Z",
+     "iopub.status.idle": "2024-06-22T20:31:36.937556Z",
+     "shell.execute_reply": "2024-06-22T20:31:36.935734Z"
     },
     "papermill": {
-     "duration": 11.116532,
-     "end_time": "2024-06-22T16:42:51.601509",
+     "duration": 10.284525,
+     "end_time": "2024-06-22T20:31:36.940188",
      "exception": false,
-     "start_time": "2024-06-22T16:42:40.484977",
+     "start_time": "2024-06-22T20:31:26.655663",
      "status": "completed"
     },
     "tags": []
@@ -124,20 +124,13 @@
       "/opt/conda/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.\n",
       "  warnings.warn(msg)\n",
       "Downloading: \"https://download.pytorch.org/models/resnet50-0676ba61.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth\n",
-      "100%|██████████| 97.8M/97.8M [00:00<00:00, 118MB/s]\n"
+      "100%|██████████| 97.8M/97.8M [00:00<00:00, 125MB/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "after conv1 torch.Size([1, 64, 13, 300, 300])\n",
-      "after maxpool torch.Size([1, 64, 7, 150, 150])\n",
-      "after layer1 torch.Size([1, 256, 7, 150, 150])\n",
-      "after layer2 torch.Size([1, 512, 4, 75, 75])\n",
-      "after layer3 torch.Size([1, 1024, 2, 38, 38])\n",
-      "after layer4 torch.Size([1, 2048, 1, 19, 19])\n",
-      "after flatten torch.Size([1, 2048])\n",
       "torch.Size([1, 40])\n"
      ]
     }
@@ -207,28 +200,23 @@
     "    \n",
     "    def forward(self, x):\n",
     "        x = self.conv1(x)\n",
-    "        print('after conv1',x.shape)\n",
     "        x = self.bn1(x)\n",
     "        x = self.relu(x)\n",
     "        x = self.maxpool(x)\n",
     "        skip_1=x\n",
-    "        print('after maxpool',x.shape)\n",
     "\n",
     "        x = self.layer1[0:7](x)\n",
     "        skip_1=self.layer1[7][0](skip_1)\n",
     "        x=x+skip_1\n",
     "        x=self.layer1[7][1](x)\n",
     "        x=self.layer1[8:-1](x)\n",
-    "        print('after layer1',x.shape)\n",
     "        skip_2=x\n",
-    "        #print(self.layer2)\n",
     "        x = self.layer2[0:7](x)\n",
     "        skip_2=self.layer2[7][0](skip_1)\n",
     "        x=skip_2+x\n",
     "        x=self.layer2[7][1](x)\n",
     "        x=self.layer2[8:-1](x)\n",
     "\n",
-    "        print('after layer2',x.shape)\n",
     "        skip_3=x\n",
     "        \n",
     "        x = self.layer3[0:7](x)\n",
@@ -237,19 +225,16 @@
     "        x=self.layer3[7][1](x)\n",
     "        x=self.layer3[8:-1](x)\n",
     "        \n",
-    "        print('after layer3',x.shape)\n",
     "        skip_4=x\n",
     "        x = self.layer4[0:7](x)\n",
     "        skip_4=self.layer4[7][0](skip_4)\n",
     "        x=skip_4+x\n",
     "        x=self.layer4[7][1](x)\n",
     "        x=self.layer4[8:-1](x)        \n",
-    "        print('after layer4',x.shape)\n",
     "\n",
     "\n",
     "        x = self.avgpool(x)\n",
     "        x = torch.flatten(x, 1)\n",
-    "        print('after flatten',x.shape)\n",
     "        x = self.fc(x)\n",
     "\n",
     "        return x\n",
@@ -265,19 +250,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "f1fa6487",
+   "id": "e64e750e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-22T16:42:51.619613Z",
-     "iopub.status.busy": "2024-06-22T16:42:51.619064Z",
-     "iopub.status.idle": "2024-06-22T16:42:51.632905Z",
-     "shell.execute_reply": "2024-06-22T16:42:51.631601Z"
+     "iopub.execute_input": "2024-06-22T20:31:36.955993Z",
+     "iopub.status.busy": "2024-06-22T20:31:36.955608Z",
+     "iopub.status.idle": "2024-06-22T20:31:36.967660Z",
+     "shell.execute_reply": "2024-06-22T20:31:36.966557Z"
     },
     "papermill": {
-     "duration": 0.025229,
-     "end_time": "2024-06-22T16:42:51.635783",
+     "duration": 0.022359,
+     "end_time": "2024-06-22T20:31:36.970152",
      "exception": false,
-     "start_time": "2024-06-22T16:42:51.610554",
+     "start_time": "2024-06-22T20:31:36.947793",
      "status": "completed"
     },
     "tags": []
@@ -355,28 +340,23 @@
     "    \n",
     "    def forward(self, x):\n",
     "        x = self.conv1(x)\n",
-    "        print('after conv1',x.shape)\n",
     "        x = self.bn1(x)\n",
     "        x = self.relu(x)\n",
     "        x = self.maxpool(x)\n",
     "        skip_1=x\n",
-    "        print('after maxpool',x.shape)\n",
     "\n",
     "        x = self.layer1[0:7](x)\n",
     "        skip_1=self.layer1[7][0](skip_1)\n",
     "        x=x+skip_1\n",
     "        x=self.layer1[7][1](x)\n",
     "        x=self.layer1[8:-1](x)\n",
-    "        print('after layer1',x.shape)\n",
     "        skip_2=x\n",
-    "        #print(self.layer2)\n",
     "        x = self.layer2[0:7](x)\n",
     "        skip_2=self.layer2[7][0](skip_1)\n",
     "        x=skip_2+x\n",
     "        x=self.layer2[7][1](x)\n",
     "        x=self.layer2[8:-1](x)\n",
     "\n",
-    "        print('after layer2',x.shape)\n",
     "        skip_3=x\n",
     "        \n",
     "        x = self.layer3[0:7](x)\n",
@@ -385,19 +365,16 @@
     "        x=self.layer3[7][1](x)\n",
     "        x=self.layer3[8:-1](x)\n",
     "        \n",
-    "        print('after layer3',x.shape)\n",
     "        skip_4=x\n",
     "        x = self.layer4[0:7](x)\n",
     "        skip_4=self.layer4[7][0](skip_4)\n",
     "        x=skip_4+x\n",
     "        x=self.layer4[7][1](x)\n",
     "        x=self.layer4[8:-1](x)        \n",
-    "        print('after layer4',x.shape)\n",
     "\n",
     "\n",
     "        x = self.avgpool(x)\n",
     "        x = torch.flatten(x, 1)\n",
-    "        print('after flatten',x.shape)\n",
     "        x = self.fc(x)\n",
     "\n",
     "        return x\n",
@@ -407,19 +384,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "833958ff",
+   "id": "568cb5bc",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-22T16:42:51.649619Z",
-     "iopub.status.busy": "2024-06-22T16:42:51.649223Z",
-     "iopub.status.idle": "2024-06-22T16:43:08.163037Z",
-     "shell.execute_reply": "2024-06-22T16:43:08.161796Z"
+     "iopub.execute_input": "2024-06-22T20:31:36.982688Z",
+     "iopub.status.busy": "2024-06-22T20:31:36.982245Z",
+     "iopub.status.idle": "2024-06-22T20:31:53.473910Z",
+     "shell.execute_reply": "2024-06-22T20:31:53.472240Z"
     },
     "papermill": {
-     "duration": 16.525321,
-     "end_time": "2024-06-22T16:43:08.167152",
+     "duration": 16.501513,
+     "end_time": "2024-06-22T20:31:53.477096",
      "exception": false,
-     "start_time": "2024-06-22T16:42:51.641831",
+     "start_time": "2024-06-22T20:31:36.975583",
      "status": "completed"
     },
     "tags": []
@@ -429,13 +406,6 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "after conv1 torch.Size([2, 64, 13, 300, 300])\n",
-      "after maxpool torch.Size([2, 64, 7, 150, 150])\n",
-      "after layer1 torch.Size([2, 256, 7, 150, 150])\n",
-      "after layer2 torch.Size([2, 512, 4, 75, 75])\n",
-      "after layer3 torch.Size([2, 1024, 2, 38, 38])\n",
-      "after layer4 torch.Size([2, 2048, 1, 19, 19])\n",
-      "after flatten torch.Size([2, 2048])\n",
       "----------------------------------------------------------------\n",
       "        Layer (type)               Output Shape         Param #\n",
       "================================================================\n",
@@ -609,14 +579,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 56.646362,
-   "end_time": "2024-06-22T16:43:09.802167",
+   "duration": 56.207607,
+   "end_time": "2024-06-22T20:31:55.110116",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-22T16:42:13.155805",
+   "start_time": "2024-06-22T20:30:58.902509",
    "version": "2.5.0"
   }
  },
