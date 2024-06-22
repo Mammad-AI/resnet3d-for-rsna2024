@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "99c52140",
+   "id": "8a8fe62c",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2024-06-21T18:01:56.041827Z",
-     "iopub.status.busy": "2024-06-21T18:01:56.041442Z",
-     "iopub.status.idle": "2024-06-21T18:02:09.521026Z",
-     "shell.execute_reply": "2024-06-21T18:02:09.519720Z"
+     "iopub.execute_input": "2024-06-22T16:42:16.443790Z",
+     "iopub.status.busy": "2024-06-22T16:42:16.443278Z",
+     "iopub.status.idle": "2024-06-22T16:42:33.675644Z",
+     "shell.execute_reply": "2024-06-22T16:42:33.674203Z"
     },
     "papermill": {
-     "duration": 13.486872,
-     "end_time": "2024-06-21T18:02:09.523928",
+     "duration": 17.241708,
+     "end_time": "2024-06-22T16:42:33.679055",
      "exception": false,
-     "start_time": "2024-06-21T18:01:56.037056",
+     "start_time": "2024-06-22T16:42:16.437347",
      "status": "completed"
     },
     "tags": []
@@ -42,19 +42,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "e9d4912b",
+   "id": "e9471d2f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T18:02:09.532698Z",
-     "iopub.status.busy": "2024-06-21T18:02:09.531597Z",
-     "iopub.status.idle": "2024-06-21T18:02:14.853395Z",
-     "shell.execute_reply": "2024-06-21T18:02:14.852353Z"
+     "iopub.execute_input": "2024-06-22T16:42:33.689900Z",
+     "iopub.status.busy": "2024-06-22T16:42:33.689465Z",
+     "iopub.status.idle": "2024-06-22T16:42:40.457821Z",
+     "shell.execute_reply": "2024-06-22T16:42:40.456538Z"
     },
     "papermill": {
-     "duration": 5.328913,
-     "end_time": "2024-06-21T18:02:14.856026",
+     "duration": 6.777305,
+     "end_time": "2024-06-22T16:42:40.460912",
      "exception": false,
-     "start_time": "2024-06-21T18:02:09.527113",
+     "start_time": "2024-06-22T16:42:33.683607",
      "status": "completed"
     },
     "tags": []
@@ -72,19 +72,44 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "66fa6a18",
+   "id": "09fa44f0",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T18:02:14.863859Z",
-     "iopub.status.busy": "2024-06-21T18:02:14.863378Z",
-     "iopub.status.idle": "2024-06-21T18:02:24.989190Z",
-     "shell.execute_reply": "2024-06-21T18:02:24.988007Z"
+     "iopub.execute_input": "2024-06-22T16:42:40.471914Z",
+     "iopub.status.busy": "2024-06-22T16:42:40.471351Z",
+     "iopub.status.idle": "2024-06-22T16:42:40.478008Z",
+     "shell.execute_reply": "2024-06-22T16:42:40.476565Z"
     },
     "papermill": {
-     "duration": 10.132913,
-     "end_time": "2024-06-21T18:02:24.991964",
+     "duration": 0.015274,
+     "end_time": "2024-06-22T16:42:40.480798",
      "exception": false,
-     "start_time": "2024-06-21T18:02:14.859051",
+     "start_time": "2024-06-22T16:42:40.465524",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "4e4dc1e5",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-22T16:42:40.491376Z",
+     "iopub.status.busy": "2024-06-22T16:42:40.490981Z",
+     "iopub.status.idle": "2024-06-22T16:42:51.597858Z",
+     "shell.execute_reply": "2024-06-22T16:42:51.595985Z"
+    },
+    "papermill": {
+     "duration": 11.116532,
+     "end_time": "2024-06-22T16:42:51.601509",
+     "exception": false,
+     "start_time": "2024-06-22T16:42:40.484977",
      "status": "completed"
     },
     "tags": []
@@ -99,7 +124,7 @@
       "/opt/conda/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.\n",
       "  warnings.warn(msg)\n",
       "Downloading: \"https://download.pytorch.org/models/resnet50-0676ba61.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth\n",
-      "100%|██████████| 97.8M/97.8M [00:00<00:00, 141MB/s]\n"
+      "100%|██████████| 97.8M/97.8M [00:00<00:00, 118MB/s]\n"
      ]
     },
     {
@@ -130,6 +155,7 @@
     "\n",
     "        # Copy weights from pretrained 2D model to 3D model\n",
     "        self.conv1.weight.data = resnet2d.conv1.weight.data.mean(dim=1, keepdim=True).unsqueeze(2).expand(-1, -1, 7, -1, -1)/7\n",
+    "        self.conv1.weight.data = self.conv1.weight.data.float()  # Ensure the correct type\n",
     "        self.layer1 = self._convert_2d_to_3d_layer(resnet2d.layer1)\n",
     "        self.layer2 = self._convert_2d_to_3d_layer(resnet2d.layer2)\n",
     "        self.layer3 = self._convert_2d_to_3d_layer(resnet2d.layer3)\n",
@@ -144,36 +170,39 @@
     "            for name, module in layer.named_children():\n",
     "                name=f\"{name}_{idx}\"\n",
     "                if isinstance(module, nn.Conv2d):\n",
-    "                    layer_3d.add_module(name, nn.Conv3d(module.in_channels, module.out_channels,\n",
-    "                                                        kernel_size=module.kernel_size[0],\n",
-    "                                                        stride=module.stride[0],\n",
-    "                                                        padding=module.padding[0],\n",
-    "                                                        bias=module.bias))\n",
-    "                    layer_3d[-1].weight.data = module.weight.data.unsqueeze(2).repeat(1,1,module.kernel_size[0],1,1)/module.kernel_size[0]\n",
-    "                    \n",
+    "                    conv3d = nn.Conv3d(module.in_channels, module.out_channels,\n",
+    "                                       kernel_size=module.kernel_size[0],\n",
+    "                                       stride=module.stride[0],\n",
+    "                                       padding=module.padding[0],\n",
+    "                                       bias=module.bias)\n",
+    "                    conv3d.weight.data = module.weight.data.unsqueeze(2).repeat(1, 1, module.kernel_size[0], 1, 1) / module.kernel_size[0]\n",
+    "                    conv3d.weight.data = conv3d.weight.data.float()  # Ensure the correct type\n",
+    "                    layer_3d.add_module(name, conv3d)\n",
     "                elif isinstance(module, nn.BatchNorm2d):\n",
-    "                    layer_3d.add_module(name, nn.BatchNorm3d(module.num_features))\n",
-    "                    layer_3d[-1].weight.data = module.weight.data\n",
-    "                    layer_3d[-1].bias.data = module.bias.data\n",
+    "                    bn3d = nn.BatchNorm3d(module.num_features)\n",
+    "                    bn3d.weight.data = module.weight.data.float()  # Ensure the correct type\n",
+    "                    bn3d.bias.data = module.bias.data.float()  # Ensure the correct type\n",
+    "                    layer_3d.add_module(name, bn3d)\n",
     "                elif isinstance(module, nn.Sequential):\n",
     "                    sub_block = nn.Sequential()\n",
     "                    for sub_name, sub_module in module.named_children():\n",
     "                        if isinstance(sub_module, nn.Conv2d):\n",
-    "                            sub_block.add_module(sub_name,nn.Conv3d(sub_module.in_channels, sub_module.out_channels,\n",
+    "                            conv3d = nn.Conv3d(sub_module.in_channels, sub_module.out_channels,\n",
     "                                               kernel_size=(sub_module.kernel_size[0], sub_module.kernel_size[0], sub_module.kernel_size[0]),\n",
     "                                               stride=(sub_module.stride[0], sub_module.stride[0], sub_module.stride[0]),\n",
     "                                               padding=(sub_module.padding[0], sub_module.padding[0], sub_module.padding[0]),\n",
-    "                                               bias=sub_module.bias))\n",
-    "                            sub_block[-1].weight.data = sub_module.weight.data.unsqueeze(2).repeat(1, 1, sub_module.kernel_size[0], 1, 1) / sub_module.kernel_size[0]\n",
-    "                        elif isinstance(sub_module,nn.BatchNorm2d):\n",
-    "                            sub_block.add_module(name, nn.BatchNorm3d(sub_module.num_features))\n",
-    "                            sub_block[-1].weight.data = sub_module.weight.data\n",
-    "                            sub_block[-1].bias.data = sub_module.bias.data\n",
-    "                    layer_3d.add_module(name,sub_block)\n",
-    "                        \n",
+    "                                               bias=sub_module.bias)\n",
+    "                            conv3d.weight.data = sub_module.weight.data.unsqueeze(2).repeat(1, 1, sub_module.kernel_size[0], 1, 1) / sub_module.kernel_size[0]\n",
+    "                            conv3d.weight.data = conv3d.weight.data.float()  # Ensure the correct type\n",
+    "                            sub_block.add_module(sub_name, conv3d)\n",
+    "                        elif isinstance(sub_module, nn.BatchNorm2d):\n",
+    "                            bn3d = nn.BatchNorm3d(sub_module.num_features)\n",
+    "                            bn3d.weight.data = sub_module.weight.data.float()  # Ensure the correct type\n",
+    "                            bn3d.bias.data = sub_module.bias.data.float()  # Ensure the correct type\n",
+    "                            sub_block.add_module(sub_name, bn3d)\n",
+    "                    layer_3d.add_module(name, sub_block)\n",
     "                else:\n",
     "                    layer_3d.add_module(name, module)\n",
-    "        #print(layer_3d)\n",
     "        return layer_3d\n",
     "    \n",
     "    def forward(self, x):\n",
@@ -227,27 +256,28 @@
     "\n",
     "# Example usage\n",
     "model = ResNet3D(pretrained=True)\n",
-    "input_tensor = torch.randn(1, 1, 25, 600, 600)  # Batch size of 1, single channel, depth 25, height 600, width 600\n",
+    "model=model.to(device)\n",
+    "input_tensor = torch.randn(1, 1, 25, 600, 600).float().to(device)  # Ensure the input tensor is of type float and moved to the GPUoutput = model(input_tensor)\n",
     "output = model(input_tensor)\n",
     "print(output.shape)  # Should be [1, 1000]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
-   "id": "fa20e9b9",
+   "execution_count": 5,
+   "id": "f1fa6487",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T18:02:25.002494Z",
-     "iopub.status.busy": "2024-06-21T18:02:25.001933Z",
-     "iopub.status.idle": "2024-06-21T18:02:25.010788Z",
-     "shell.execute_reply": "2024-06-21T18:02:25.009872Z"
+     "iopub.execute_input": "2024-06-22T16:42:51.619613Z",
+     "iopub.status.busy": "2024-06-22T16:42:51.619064Z",
+     "iopub.status.idle": "2024-06-22T16:42:51.632905Z",
+     "shell.execute_reply": "2024-06-22T16:42:51.631601Z"
     },
     "papermill": {
-     "duration": 0.016688,
-     "end_time": "2024-06-21T18:02:25.013129",
+     "duration": 0.025229,
+     "end_time": "2024-06-22T16:42:51.635783",
      "exception": false,
-     "start_time": "2024-06-21T18:02:24.996441",
+     "start_time": "2024-06-22T16:42:51.610554",
      "status": "completed"
     },
     "tags": []
@@ -273,6 +303,7 @@
     "\n",
     "        # Copy weights from pretrained 2D model to 3D model\n",
     "        self.conv1.weight.data = resnet2d.conv1.weight.data.mean(dim=1, keepdim=True).unsqueeze(2).expand(-1, -1, 7, -1, -1)/7\n",
+    "        self.conv1.weight.data = self.conv1.weight.data.float()  # Ensure the correct type\n",
     "        self.layer1 = self._convert_2d_to_3d_layer(resnet2d.layer1)\n",
     "        self.layer2 = self._convert_2d_to_3d_layer(resnet2d.layer2)\n",
     "        self.layer3 = self._convert_2d_to_3d_layer(resnet2d.layer3)\n",
@@ -287,36 +318,39 @@
     "            for name, module in layer.named_children():\n",
     "                name=f\"{name}_{idx}\"\n",
     "                if isinstance(module, nn.Conv2d):\n",
-    "                    layer_3d.add_module(name, nn.Conv3d(module.in_channels, module.out_channels,\n",
-    "                                                        kernel_size=module.kernel_size[0],\n",
-    "                                                        stride=module.stride[0],\n",
-    "                                                        padding=module.padding[0],\n",
-    "                                                        bias=module.bias))\n",
-    "                    layer_3d[-1].weight.data = module.weight.data.unsqueeze(2).repeat(1,1,module.kernel_size[0],1,1)/module.kernel_size[0]\n",
-    "                    \n",
+    "                    conv3d = nn.Conv3d(module.in_channels, module.out_channels,\n",
+    "                                       kernel_size=module.kernel_size[0],\n",
+    "                                       stride=module.stride[0],\n",
+    "                                       padding=module.padding[0],\n",
+    "                                       bias=module.bias)\n",
+    "                    conv3d.weight.data = module.weight.data.unsqueeze(2).repeat(1, 1, module.kernel_size[0], 1, 1) / module.kernel_size[0]\n",
+    "                    conv3d.weight.data = conv3d.weight.data.float()  # Ensure the correct type\n",
+    "                    layer_3d.add_module(name, conv3d)\n",
     "                elif isinstance(module, nn.BatchNorm2d):\n",
-    "                    layer_3d.add_module(name, nn.BatchNorm3d(module.num_features))\n",
-    "                    layer_3d[-1].weight.data = module.weight.data\n",
-    "                    layer_3d[-1].bias.data = module.bias.data\n",
+    "                    bn3d = nn.BatchNorm3d(module.num_features)\n",
+    "                    bn3d.weight.data = module.weight.data.float()  # Ensure the correct type\n",
+    "                    bn3d.bias.data = module.bias.data.float()  # Ensure the correct type\n",
+    "                    layer_3d.add_module(name, bn3d)\n",
     "                elif isinstance(module, nn.Sequential):\n",
     "                    sub_block = nn.Sequential()\n",
     "                    for sub_name, sub_module in module.named_children():\n",
     "                        if isinstance(sub_module, nn.Conv2d):\n",
-    "                            sub_block.add_module(sub_name,nn.Conv3d(sub_module.in_channels, sub_module.out_channels,\n",
+    "                            conv3d = nn.Conv3d(sub_module.in_channels, sub_module.out_channels,\n",
     "                                               kernel_size=(sub_module.kernel_size[0], sub_module.kernel_size[0], sub_module.kernel_size[0]),\n",
     "                                               stride=(sub_module.stride[0], sub_module.stride[0], sub_module.stride[0]),\n",
     "                                               padding=(sub_module.padding[0], sub_module.padding[0], sub_module.padding[0]),\n",
-    "                                               bias=sub_module.bias))\n",
-    "                            sub_block[-1].weight.data = sub_module.weight.data.unsqueeze(2).repeat(1, 1, sub_module.kernel_size[0], 1, 1) / sub_module.kernel_size[0]\n",
-    "                        elif isinstance(sub_module,nn.BatchNorm2d):\n",
-    "                            sub_block.add_module(name, nn.BatchNorm3d(sub_module.num_features))\n",
-    "                            sub_block[-1].weight.data = sub_module.weight.data\n",
-    "                            sub_block[-1].bias.data = sub_module.bias.data\n",
-    "                    layer_3d.add_module(name,sub_block)\n",
-    "                        \n",
+    "                                               bias=sub_module.bias)\n",
+    "                            conv3d.weight.data = sub_module.weight.data.unsqueeze(2).repeat(1, 1, sub_module.kernel_size[0], 1, 1) / sub_module.kernel_size[0]\n",
+    "                            conv3d.weight.data = conv3d.weight.data.float()  # Ensure the correct type\n",
+    "                            sub_block.add_module(sub_name, conv3d)\n",
+    "                        elif isinstance(sub_module, nn.BatchNorm2d):\n",
+    "                            bn3d = nn.BatchNorm3d(sub_module.num_features)\n",
+    "                            bn3d.weight.data = sub_module.weight.data.float()  # Ensure the correct type\n",
+    "                            bn3d.bias.data = sub_module.bias.data.float()  # Ensure the correct type\n",
+    "                            sub_block.add_module(sub_name, bn3d)\n",
+    "                    layer_3d.add_module(name, sub_block)\n",
     "                else:\n",
     "                    layer_3d.add_module(name, module)\n",
-    "        #print(layer_3d)\n",
     "        return layer_3d\n",
     "    \n",
     "    def forward(self, x):\n",
@@ -367,26 +401,25 @@
     "        x = self.fc(x)\n",
     "\n",
     "        return x\n",
-    "\n",
     "\"\"\")"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
-   "id": "4f86321b",
+   "execution_count": 6,
+   "id": "833958ff",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-21T18:02:25.022746Z",
-     "iopub.status.busy": "2024-06-21T18:02:25.022367Z",
-     "iopub.status.idle": "2024-06-21T18:02:40.050569Z",
-     "shell.execute_reply": "2024-06-21T18:02:40.049350Z"
+     "iopub.execute_input": "2024-06-22T16:42:51.649619Z",
+     "iopub.status.busy": "2024-06-22T16:42:51.649223Z",
+     "iopub.status.idle": "2024-06-22T16:43:08.163037Z",
+     "shell.execute_reply": "2024-06-22T16:43:08.161796Z"
     },
     "papermill": {
-     "duration": 15.036239,
-     "end_time": "2024-06-21T18:02:40.053497",
+     "duration": 16.525321,
+     "end_time": "2024-06-22T16:43:08.167152",
      "exception": false,
-     "start_time": "2024-06-21T18:02:25.017258",
+     "start_time": "2024-06-22T16:42:51.641831",
      "status": "completed"
     },
     "tags": []
@@ -576,14 +609,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 48.025545,
-   "end_time": "2024-06-21T18:02:41.380930",
+   "duration": 56.646362,
+   "end_time": "2024-06-22T16:43:09.802167",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-21T18:01:53.355385",
+   "start_time": "2024-06-22T16:42:13.155805",
    "version": "2.5.0"
   }
  },
